@@ -1,1 +1,77 @@
-Test!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto Part Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loto Part Maker</h1>
+        <div class="tab-container">
+            <button class="tab-btn active" data-tab="set-a">Set A</button>
+            <button class="tab-btn" data-tab="set-b">Set B</button>
+            <button class="tab-btn" data-tab="set-c">Set C</button>
+            <button class="tab-btn" data-tab="set-d">Set D</button>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active" id="set-a">
+                <!-- Set A content -->
+            </div>
+            <div class="tab-pane" id="set-b">
+                <!-- Set B content -->
+            </div>
+            <div class="tab-pane" id="set-c">
+                <!-- Set C content -->
+            </div>
+            <div class="tab-pane" id="set-d">
+                <!-- Set D content -->
+            </div>
+        </div>
+        <div class="selections">
+            <div class="selection">
+                <h3>A: Selection not made</h3>
+            </div>
+            <div class="selection">
+                <h3>B: Selection not made</h3>
+            </div>
+            <div class="selection">
+                <h3>C: Selection not made</h3>
+            </div>
+            <div class="selection">
+                <h3>D: Selection not made</h3>
+            </div>
+        </div>
+        <div class="date-container">
+            <h3>Date</h3>
+            <div class="date-picker">
+                <!-- Date picker implementation -->
+            </div>
+        </div>
+        <div class="config-container">
+            <h3>Configurations</h3>
+            <div class="config-options">
+                <label for="jackpot-amount">Jackpot Amount (Millions):</label>
+                <input type="number" id="jackpot-amount">
+                <label for="number-of-parts">Number of Parts:</label>
+                <input type="number" id="number-of-parts">
+                <label for="ref">Ref:</label>
+                <input type="text" id="ref">
+                <label for="part-price">Part Price:</label>
+                <input type="number" id="part-price">
+            </div>
+            <div class="config-buttons">
+                <button>Load Config</button>
+                <button>Save Config</button>
+            </div>
+        </div>
+        <div class="button-container">
+            <button>Generate PDF</button>
+            <button>Reset all sele</button>
+            <button>Randomize</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
